@@ -63,7 +63,7 @@ First create a new conda environment
     conda env create -f environment.yaml
     conda activate control
 
-All models and detectors can be downloaded from [our Hugging Face page](https://huggingface.co/lllyasviel/ControlNet). Make sure that SD models are put in "ControlNet/models" and detectors are put in "ControlNet/annotator/ckpts". Make sure that you download all necessary pretrained weights and detector models from that Hugging Face page, including HED edge detection model, Midas depth estimation model, Openpose, and so on. 
+All models and detectors can be downloaded from [our Hugging Face page](https://huggingface.co/lllyasviel/ControlNet). Make sure that SD models are put in "ControlNet/models" and detectors are put in "ControlNet/annotator/ckpts". Make sure that you download all necessary pretrained weights and detector models from that Hugging Face page, including the HED edge detection model, the Midas depth estimation model, Openpose, and so on. 
 
 We provide 9 Gradio apps with these models.
 
@@ -88,7 +88,11 @@ All test images can be found at the folder "test_imgs".
 
 Stable Diffusion 1.5 + ControlNet (using simple Canny edge detection)
 
+```bash
+    cd ..
     python gradio_canny2image.py
+```
+    
 
 The Gradio app also allows you to change the Canny edge thresholds. Just try it for more details.
 
