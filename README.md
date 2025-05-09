@@ -69,6 +69,21 @@ We provide 9 Gradio apps with these models.
 
 All test images can be found at the folder "test_imgs".
 
+```bash
+!git clone https://github.com/lllyasviel/ControlNet.git
+!cd ControlNet
+
+!cd models
+!pip install transformers accelerate safetensors xformers opencv-python einops
+!pip install omegaconf open_clip_torch timm pytorch-lightning opencv-contrib-python imageio torch torchvision gradio==5.29.0
+
+!wget https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.ckpt
+!wget https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_openpose.pth
+!wget https://huggingface.co/Linaqruf/anything-v3.0/resolve/main/anything-v3-full.safetensors
+!wget https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_canny.pth  # for canny edge
+
+```
+
 ## ControlNet with Canny Edge
 
 Stable Diffusion 1.5 + ControlNet (using simple Canny edge detection)
