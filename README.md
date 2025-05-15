@@ -70,8 +70,8 @@ We provide 9 Gradio apps with these models.
 All test images can be found at the folder "test_imgs".
 
 ```bash
-!git clone https://github.com/lllyasviel/ControlNet.git
-!cd ControlNet
+[!git clone https://github.com/lllyasviel/ControlNet.git](https://github.com/MargiPandya27/ControlNet_.git)
+!cd ControlNet_
 
 !cd models
 !pip install transformers accelerate safetensors xformers opencv-python einops
